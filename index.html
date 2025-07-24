@@ -20,8 +20,9 @@
       position: relative;
       place-content: end center;
       overflow: hidden;
-      display: grid;
-      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100dvh;
     }
 
     h1 {
@@ -68,6 +69,11 @@
       color: #FFD493;
       font-size: 16px;
       border: none;
+      max-width: 90vw;
+
+      @media (width <= 800px) {
+        padding: 22px;
+      }
     }
 
     dialog > p {
